@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pacific Trails Resort::Reservation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="pacific.css" >
+    <script src="myFunctions.js"></script>
+</head>
+<body>
+   
+        <header>
+            <h1><a href="index.html"> Pacific Trails Resort </a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="yurts.html">Yurts</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    <div id="wrapper">
+        <div id="reshero">
+            <!--
+                <img src="./images/coast.jpg">
+            -->
+        </div>
+        <main> 
+        <h2>Reservations at Pacific Trails</h2>
+        <h3>Contact Us</h3>
+        Required fields are marked with an asterisk*.
+        <p>
+            <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+            <label for="myFName">*First Name:</label> <input type="text" id="myFName" name="First Name" required>
+            <label for="myLName">*Last Name:</label> <input type="text" id="myLName" name="Last Name" required>
+            <label for="myMAdress">Mailling Adress:</label> <input type="text" id="myMAdress" name="Mailling Adress" >
+            <label for="myEmail">*E-mail:</label> <input type="email" id="myEmail" name="Email"  required>
+            <label for="myPhone">Phone:</label> <input type="text" id="myPhone" name="Phone"  onblur="checkPhone('myPhone','message')">
+            <label for="myDate">Arrival Date:</label> <input type="date" id="myDate" name="Arrival Date" >
+            <label for="myDDate">Departure Date:</label> <input type="date" id="myDDate" name="Departure Date" >
+            <label for="myNights">Nights:</label> <input type="number" id="myNights" min="1" max="14" name="Nights" >
+            <label for="myComments">*Comments:</label> <textarea id="myComments" name="Comments" rows="2" cols="20" required></textarea>
+            <input type="submit" id="mySubmit">
+            </form>
+        </p>
+        <div> <span id="message"></span></div>
+        </main>
+<footer>
+    Copyright &#xa9; 2020 Pacific Trails Resort <br> <a href="mailto:dsantana15@ivytech.edu">dssantana15@ivytech.edu</a>
+</footer>
+    </div>
+</body>
+</html>
